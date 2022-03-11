@@ -21,3 +21,8 @@ sudo apt upgrade -y
 sudo systemctl enable ssh
 sudo systemctl start ssh
 sudo apt install xrdp
+echo ""
+echo ""
+echo ""
+echo ""
+ifconfig | grep 'inet' | grep -v '127.0.0.1' | cut -d: -f2
