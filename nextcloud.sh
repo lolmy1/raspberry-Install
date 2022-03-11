@@ -22,7 +22,7 @@ Query
 
 wget -P /tmp/ https://download.nextcloud.com/server/releases/nextcloud-23.0.2.zip
 unzip /tmp/nextcloud-23.0.2.zip -d /var/www/
-chown www-data:www-data -Rv nextcloud/
+chown www-data:www-data -Rv /var/www/nextcloud/
 
 a2enmod rewrite
 a2enmod headers
