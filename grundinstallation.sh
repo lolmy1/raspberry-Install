@@ -20,7 +20,7 @@ sudo apt update
 sudo apt upgrade -y
 sudo systemctl enable ssh
 sudo systemctl start ssh
-sudo apt install xrdp
+sudo apt install xrdp -y
 echo ""
 echo ""
 echo ""
