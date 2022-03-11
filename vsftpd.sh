@@ -12,4 +12,5 @@ apt install vsftpd -y
 
 sed -i 's/#write_enable=YES/write_enable=YES/g' $config
 sed -i 's/#chroot_local_user=YES/chroot_local_user=YES/g' $config
+echo "allow_writeable_chroot=YES" | tee -a $config
 /etc/init.d/vsftpd restart
