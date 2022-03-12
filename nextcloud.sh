@@ -50,5 +50,5 @@ sed -i 's/memory_limit = 128M/memory_limit = 512M/g' /etc/php/7.4/apache2/php.in
 systemctl restart apache2
 
 cd /var/www/nextcloud/
-sudo -u www-data php occ config:system:set trusted_domains 1 --value=$ip
 sudo -u www-data php occ  maintenance:install --database mysql --database-name nextcloud  --database-user $sqluser --database-pass $sqluserpw --admin-user $adminname --admin-pass $adminpw
+sudo -u www-data php occ config:system:set trusted_domains 1 --value=$ip
